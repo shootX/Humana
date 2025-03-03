@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.humana.store.ui.auth.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/actionLoginFragmentToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionLoginFragmentToRegisterFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/actionLoginFragmentToForgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/actionLoginFragmentToAdminPanelFragment"
+            app:destination="@id/adminPanelFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.humana.store.ui.home.HomeFragment"
+        android:label="HomeFragment" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.humana.store.ui.auth.RegisterFragment"
+        android:label="RegisterFragment">
+        <action
+            android:id="@+id/actionRegisterFragmentToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.humana.store.ui.auth.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment">
+        <action
+            android:id="@+id/actionForgotPasswordFragmentToLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/forgotPasswordFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminPanelFragment"
+        android:name="com.humana.store.ui.admin.AdminPanelFragment"
+        android:label="AdminPanelFragment">
+        <action
+            android:id="@+id/actionAdminPanelFragmentToManageStoresFragment"
+            app:destination="@id/manageStoresFragment" />
+        <action
+            android:id="@+id/actionAdminPanelFragmentToManagePromotionsFragment"
+            app:destination="@id/managePromotionsFragment" />
+        <action
+            android:id="@+id/actionAdminPanelFragmentToManageUsersFragment"
+            app:destination="@id/manageUsersFragment" />
+        <action
+            android:id="@+id/actionAdminPanelFragmentToStatisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageStoresFragment"
+        android:name="com.humana.store.ui.admin.ManageStoresFragment"
+        android:label="ManageStoresFragment" />
+
+    <fragment
+        android:id="@+id/managePromotionsFragment"
+        android:name="com.humana.store.ui.admin.ManagePromotionsFragment"
+        android:label="ManagePromotionsFragment" />
+
+    <fragment
+        android:id="@+id/manageUsersFragment"
+        android:name="com.humana.store.ui.admin.ManageUsersFragment"
+        android:label="ManageUsersFragment" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.humana.store.ui.admin.StatisticsFragment"
+        android:label="StatisticsFragment" />
+
+</navigation>

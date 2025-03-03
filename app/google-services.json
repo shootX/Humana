@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "161697636505",
+    "project_id": "humana-store",
+    "storage_bucket": "humana-store.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161697636505:android:422fcd0bb6b69f0e809808",
+        "android_client_info": {
+          "package_name": "com.humana.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161697636505-0ien93dnfpclu18s7h34h20cjlfio9oc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.humana.store",
+            "certificate_hash": "57486be2835bb8b000679831ebcd6bfad06446ca"
+          }
+        },
+        {
+          "client_id": "161697636505-khapblf1kqvlp74ce75545dvh667itgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXjnC6tqBaGluOXXZQ5Nq3QJCDUsV1ZqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161697636505-khapblf1kqvlp74ce75545dvh667itgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
