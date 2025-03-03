@@ -29,7 +29,16 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.humana.store.ui.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/actionHomeFragmentToMapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.humana.store.ui.map.MapFragment"
+        android:label="MapFragment" />
 
     <fragment
         android:id="@+id/registerFragment"

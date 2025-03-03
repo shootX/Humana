@@ -20,6 +20,18 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
+        // ვაჩვენოთ bottom navigation მხოლოდ მთავარ და რუკის ფრაგმენტებზე
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.homeFragment, R.id.mapFragment -> {
+                    binding.bottomNavigation.visibility = android.view.View.VISIBLE
+                }
+                else -> {
+                    binding.bottomNavigation.visibility = android.view.View.GONE
+                }
+            }
+        }
+
         binding.bottomNavigation.setupWithNavController(navController)
     }
 }
